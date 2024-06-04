@@ -88,6 +88,7 @@ h3 {
 
 p {
 	font-size: 40px;
+	text-align: center;
 }
 
 .Change{
@@ -132,6 +133,7 @@ section.prof {
 
 section div.profrapper {
 	display: flex;
+	justify-content: center;
 }
 
 section.work {
