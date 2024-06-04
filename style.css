@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+body {
+	scroll-padding-top: 100px;
+}
+
+
+header {
+	background-color: rgb(67, 147, 250);
+	position: fixed;
+	/*追従ナビのためpositionをfixedにする*/
+	top: 0;
+	/*ポジション設定topを0*/
+	height: 90px;
+	/*headerの高さを指定*/
+	width: 100%;
+	/*position:fixed;にしたため、横幅100%を設定*/
+	z-index: 100000;
+}
+
+header ul {
+	display: flex;
+	justify-content: end;
+	font-size: 32px;
+}
+
+header li {
+	padding: 30px;
+}
+
+/* main div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+} */
+
+h1 {
+	font-size: 10vw;
+	margin-top: 10rem;
+}
+
+
+h1.name2 {
+	display: flex;
+	justify-content: end;
+}
+
+
+
+.op {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: -5%;
+	z-index: -1000;
+	filter: opacity(50%);
+}
+
+.op.playEnd {
+	animation: fadeOut 1.5s ease;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+main {
+	padding-bottom: 18rem;
+}
+
+
+h2 {
+	font-size: 120px;
+	margin-bottom: 3%;
+}
+	
+h3 {
+	font-size: 60px;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+p {
+	font-size: 23px;
+}
+
+.Change{
+	animation: fontcolor 2s 15s forwards;
+}
+
+@keyframes fontcolor{
+	100%{color: crimson}
+}
+
+article {
+	background-image: url(image/22213505.png);
+}
+
+/*----------------------------
+scroll_up ｜下から上へ出現
+----------------------------*/
+section {
+	transition: 0.8s ease-in-out;
+	transform: translateY(30px);
+	opacity: 0;
+	padding: 90px;
+	margin-top: -90px;
+}
+
+
+section.on {
+	transform: translateY(0);
+	opacity: 1.0;
+}
+
+
+section.prof {
+	position: relative;
+	left: 0rem;
+}
+
+/* section .profrap{
+	position: absolute;
+	top: 0;
+} */
+
+section div.profrapper {
+	display: flex;
+}
+
+section.work {
+	position: relative;
+	top: -5%;
+}
+
+section ul {
+	display: flex;
+	justify-content: space-evenly;
+	padding-left: 10%;
+	width: 100%;
+}
+
+section ul li img {
+	width: 30rem;
+}
+
+section ul.gallery-list {
+	transition-delay: 4s;
+}
+
+/*全共通*/
+
+.bgextend {
+	animation-name: bgextendAnimeBase;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	position: relative;
+	overflow: hidden;
+	/*　はみ出た色要素を隠す　*/
+	opacity: 0;
+}
+
+@keyframes bgextendAnimeBase {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+/*中の要素*/
+.bgappear {
+	animation-name: bgextendAnimeSecond;
+	animation-duration: 1s;
+	animation-delay: 0.6s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes bgextendAnimeSecond {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/*左から右*/
+.bgLRextend::before {
+	animation-name: bgLRextendAnime;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #666;
+	/*伸びる背景色の設定*/
+}
+
+@keyframes bgLRextendAnime {
+	0% {
+		transform-origin: left;
+		transform: scaleX(0);
+	}
+
+	50% {
+		transform-origin: left;
+		transform: scaleX(1);
+	}
+
+	50.001% {
+		transform-origin: right;
+	}
+
+	100% {
+		transform-origin: right;
+		transform: scaleX(0);
+	}
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.bgappearTrigger,
+.bgappearTrigger2,
+.bgLRextendTrigger {
+	opacity: 0;
+}
+
+
+/*全て共通：hideエリアをはじめは非表示*/
+.hide-area {
+	display: none;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before {
+	background: #ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+	background: #666;
+}
