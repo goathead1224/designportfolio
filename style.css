@@ -80,7 +80,7 @@ h2 {
 	font-size: 120px;
 	margin-bottom: 3%;
 }
-	
+
 h3 {
 	font-size: 70px;
 	margin-top: 3%;
@@ -89,16 +89,18 @@ h3 {
 
 p {
 	font-size: 40px;
-text-align: center;
-margin-top: 10%;
+	text-align: center;
+	margin-top: 10%;
 }
 
-.Change{
+.Change {
 	animation: fontcolor 2s 15s forwards;
 }
 
-@keyframes fontcolor{
-	100%{color: crimson}
+@keyframes fontcolor {
+	100% {
+		color: crimson
+	}
 }
 
 article {
@@ -135,7 +137,7 @@ section.prof {
 
 section div.profrapper {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 section.work {
@@ -143,12 +145,12 @@ section.work {
 	top: -5%;
 }
 
-section ul.webrapper{
+section ul.webrapper {
 	display: flex;
-justify-content: space-around;
+	justify-content: space-around;
 }
 
-section ul.gallery-list{
+section ul.gallery-list {
 	display: flex;
 	justify-content: space-around;
 }
