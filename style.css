@@ -139,9 +139,9 @@ section.work {
 	top: -5%;
 }
 
-section  ul.webrapper{
+section ul.webrapper{
 	display: flex;
-justify-content: center;
+justify-content: space-around;
 }
 
 section ul.gallery-list{
