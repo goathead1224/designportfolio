@@ -93,11 +93,11 @@ h3 {
 
 p {
 	font-size: 40px;
-	margin-top: 10%;
 }
 
 p.exp{
-	font-size:30px; 
+	font-size:30px;
+	margin-top: 10%;
 }
 
 .Change {
