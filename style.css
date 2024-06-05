@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+img{
+max-width: 100%;
+}
+
 body {
 	scroll-padding-top: 100px;
 }
@@ -36,7 +40,7 @@ header li {
 
 h1 {
 	font-size: 10vw;
-	margin-top: 15rem;
+	margin-top: 10rem;
 }
 
 
@@ -49,8 +53,9 @@ h1.name2 {
 
 .op {
 	width: 100vw;
-	height: 100vh;
-	position: absolute;
+	height: 50vh;
+}
+	/* position: absolute;
 	top: -5%;
 	z-index: -1000;
 	filter: opacity(50%);
@@ -68,11 +73,8 @@ h1.name2 {
 	100% {
 		opacity: 0;
 	}
-}
+} */
 
-main {
-	padding-bottom: 18rem;
-}
 
 
 
@@ -115,7 +117,6 @@ section {
 	transform: translateY(30px);
 	opacity: 0;
 	padding: 90px;
-	margin-top: -90px;
 }
 
 
@@ -130,10 +131,6 @@ section.prof {
 	left: 0rem;
 }
 
-/* section .profrap{
-	position: absolute;
-	top: 0;
-} */
 
 section div.profrapper {
 	display: flex;
@@ -153,15 +150,6 @@ section ul.webrapper {
 section ul.gallery-list {
 	display: flex;
 	justify-content: space-around;
-}
-
-
-
-section ul li img {
-	width: 30rem;
-}
-
-section ul.gallery-list {
 	transition-delay: 4s;
 }
 
