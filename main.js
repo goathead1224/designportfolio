@@ -104,18 +104,9 @@ $('#link a[href*="#"]').click(function () {//全てのページ内リンクに�
 	return false;
 });
 
-const opWrap = document.querySelector('.op')
-const opVideo = document.querySelector('video');
-opVideo.addEventListener('play', () => {
-
-	const playTime = opVideo.duration * 1000 - 1000;
-	const videoDuration = opVideo.duration * 1000;
-
-	setTimeout(function () {
-		opWrap.classList.add("playEnd");
-	}, playTime);
-	setTimeout(function () {
-		opWrap.style.display = "none";
-	}, videoDuration);
-
-});
+$(function () {
+	$('.imageList__thumbnail').on('click', function () {
+		var selectedImgSrc = $(this).children('img').attr('src');
+		$('.imageList__view').children('img').attr('src', selectedImgSrc);
+	});
+})
