@@ -6,6 +6,8 @@ img {
 
 body {
 	scroll-padding-top: 100px;
+	background-image:url(image/885337.jpg);
+	background-size: contain;
 }
 
 
@@ -32,15 +34,20 @@ header li {
 	padding: 30px;
 }
 
-/* main div {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-} */
+main {
+	background-image: url(image/23225642.png);
+	background-color:rgba(255,255,255,0.4);
+background-blend-mode:lighten;
+	background-size: 100%;
+	background-position: 5%;
+		height: 100vh;
+}
+
+
 
 h1.name1 {
 	font-size: 10vw;
-	margin-top: 20rem;
+padding-top: 15%;
 }
 
 
@@ -57,29 +64,6 @@ h1.name2 {
 	width: 100vw;
 	height: 50vh;
 }
-
-/* position: absolute;
-	top: -5%;
-	z-index: -1000;
-	filter: opacity(50%);
-}
-
-.op.playEnd {
-	animation: fadeOut 1.5s ease;
-}
-
-@keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-} */
-
-
-
 
 h2 {
 	font-size: 120px;
@@ -102,7 +86,7 @@ p.exp {
 }
 
 .Change {
-	animation: fontcolor 2s 15s forwards;
+	animation: fontcolor 2s 2s forwards;
 }
 
 @keyframes fontcolor {
