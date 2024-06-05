@@ -124,6 +124,9 @@ section {
 	padding: 90px;
 }
 
+section img{
+	width: 100%;
+}
 
 section.on {
 	transform: translateY(0);
@@ -156,6 +159,10 @@ section ul.gallery-list {
 	display: flex;
 	justify-content: space-around;
 	transition-delay: 4s;
+}
+
+section ul.gallery-list li a.gallery{
+	width: 150%;
 }
 
 /*全共通*/
