@@ -87,9 +87,7 @@ h3 {
 }
 
 p {
-	font-size: 40px;
-	text-align: center;
-}
+	font-size: 40px;}
 
 .Change{
 	animation: fontcolor 2s 15s forwards;
@@ -141,12 +139,17 @@ section.work {
 	top: -5%;
 }
 
-section ul {
+section  ul.webrapper{
 	display: flex;
-	justify-content: space-evenly;
-	padding-left: 10%;
-	width: 100%;
+justify-content: center;
 }
+
+section ul.gallery-list{
+	display: flex;
+	justify-content: space-around;
+}
+
+
 
 section ul li img {
 	width: 30rem;
