@@ -6,7 +6,7 @@ img {
 
 body {
 	scroll-padding-top: 100px;
-	background-image:url(image/1488502.jpg);
+	background-image: url(image/1488502.jpg);
 	background-size: cover;
 }
 
@@ -36,21 +36,21 @@ header li {
 
 main {
 	background-image: url(image/23225642.png);
-	background-color:rgba(255,255,255,0.4);
-background-blend-mode:lighten;
+	background-color: rgba(255, 255, 255, 0.4);
+	background-blend-mode: lighten;
 	background-size: 100%;
 	background-position: 5%;
-		height: 100vh;
-		margin-bottom: 20%;
+	height: 100vh;
+	margin-bottom: 20%;
 }
 
-h1{
+h1 {
 	font-family: 'Times New Roman', Times, serif;
 }
 
 h1.name1 {
 	font-size: 13vw;
-padding-top: 13%;
+	padding-top: 13%;
 }
 
 
@@ -133,11 +133,11 @@ section ul.webrapper {
 	align-items: center;
 }
 
-section ul.webrapper li{
+section ul.webrapper li {
 	width: 25%;
 }
 
-section ul.gallery-list {
+/* section ul.gallery-list {
 	display: flex;
 	justify-content: space-around;
 	transition-delay: 4s;
@@ -145,7 +145,7 @@ section ul.gallery-list {
 
 section ul.gallery-list li a.gallery {
 	width: 150%;
-}
+} */
 
 /*全共通*/
 
@@ -248,15 +248,68 @@ section ul.gallery-list li a.gallery {
 	background: #666;
 }
 
-footer{
+footer {
 	background-color: rgb(67, 147, 250);
 	width: 100%;
 	height: 10rem;
 }
 
 
-footer{
+footer {
 	display: flex;
 	align-items: flex-end;
-justify-content: center;
+	justify-content: center;
+}
+
+div.imageList {
+	width: 1240px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	left: 17%;
+	margin: 10% 0 10% 0;
+}
+
+.imageList__view {
+	flex: 0 0 880px;
+}
+
+.imageList__thumbs {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 880px;
+	overflow: scroll;
+}
+
+.imageList__thumbnail {
+	margin-left: 10px;
+	margin-top: 10%;
+	flex: 0 1 calc(50% - 10px);
+}
+
+.imageList__thumbnail:nth-child(n + 3) {
+	margin-top: 10px;
+}
+
+
+.imageList img {
+	width: 100%;
+	display: block;
+}
+
+.imageList__thumbnail {
+	/* 拡大してはみ出した部分を非表示にする */
+	overflow: hidden;
+	width: 200px;
+	height: 150px;
+}
+
+.imageList__thumbnail img {
+	transition: all 0.3s;
+}
+
+.imageList__thumbnail img:hover {
+	transform: scale(1.2);
 }
