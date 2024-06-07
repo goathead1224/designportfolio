@@ -185,7 +185,7 @@ background-color: rgb(224, 223, 223);
 	/* 拡大してはみ出した部分を非表示にする */
 	overflow: hidden;
 	width: 200px;
-	height: 130px;
+	height: 205px;
 	object-fit: cover;
 }
 
