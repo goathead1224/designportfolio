@@ -151,7 +151,7 @@ justify-content: center;
 }
 
 .imageList__view {
-	flex: 0  600px;
+	flex: 0  1400px;
 	height: 2000px;
 	display: flex;
 	align-items: center;
