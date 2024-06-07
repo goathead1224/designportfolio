@@ -68,18 +68,6 @@ $(window).on('load', function () {
 	BgFadeAnime();/* アニメーション用の関数を呼ぶ*/
 });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
-//3. 画像のモーダル
-$(".gallery").modaal({
-	type: 'image',
-	overlay_close: true,//モーダル背景クリック時に閉じるか
-	before_open: function () {// モーダルが開く前に行う動作
-		$('html').css('overflow-y', 'hidden');/*縦スクロールバーを出さない*/
-	},
-
-	after_close: function () {// モーダルが閉じた後に行う動作
-		$('html').css('overflow-y', 'scroll');/*縦スクロールバーを出す*/
-	}
-});
 
 //scroll_effect
 $(window).scroll(function () {
