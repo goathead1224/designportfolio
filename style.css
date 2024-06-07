@@ -65,13 +65,16 @@ h1.name2 {
 h2 {
 	font-size: 120px;
 	margin-bottom: 3%;
+margin-left: 5%;
 	font-family: 'Times New Roman', Times, serif;
+	color: orange;
 }
 
 h3 {
 	font-size: 70px;
 	margin-top: 3%;
 	margin-bottom: 3%;
+	margin-left: 10%;
 }
 
 p {
@@ -139,7 +142,7 @@ section ul.webrapper li {
 }
 
 div.imageList {
-	width: 1000px;
+	width: 2000px;
 	display: flex;
 justify-content: center;
 	padding: 5% 0 10% 0;
@@ -149,7 +152,7 @@ justify-content: center;
 
 .imageList__view {
 	flex: 0  600px;
-	height: 880px;
+	height: 2000px;
 	display: flex;
 	align-items: center;
 background-color: rgb(224, 223, 223);
@@ -159,7 +162,7 @@ background-color: rgb(224, 223, 223);
 	flex: 1;
 	display: flex;
 	flex-wrap: wrap;
-	height: 880px;
+	height: 2000px;
 	background-color: rgb(224, 223, 223);
 }
 
