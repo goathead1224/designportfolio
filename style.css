@@ -65,7 +65,7 @@ h1.name2 {
 h2 {
 	font-size: 120px;
 	margin-bottom: 3%;
-margin-left: 5%;
+	margin-left: 5%;
 	font-family: 'Times New Roman', Times, serif;
 	color: orange;
 }
@@ -75,6 +75,12 @@ h3 {
 	margin-top: 3%;
 	margin-bottom: 3%;
 	margin-left: 10%;
+}
+
+h4 {
+	font-size: 50px;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 p {
@@ -115,15 +121,62 @@ section.on {
 }
 
 
-section.prof {
+section.abou {
 	position: relative;
 	left: 0rem;
 }
 
+.aboutext {
+background-color: gainsboro;
+	width: 35%;
 
-section div.profrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.abourapper img {
+	width: 50%;
+}
+
+.aboutext li {
+	font-size: 35px;
+}
+
+
+
+.skill{
+	display: flex;
+justify-content: space-around;
+padding-top: 5%;
+}
+
+.skill p{
+	text-align: center;
+	padding-top: 5%;
+}
+
+.skill2{
 	display: flex;
 	justify-content: space-around;
+padding-top: 5%;
+}
+
+.skill2 p{
+	text-align: center;
+	padding-top: 10%;
+}
+
+.skill img{
+	width: 100%;
+}
+
+.skill2 img{
+	width: 100%;
+}
+
+section div.abourapper {
+	display: flex;
+	padding-left: 12%;
 }
 
 section.work {
@@ -144,21 +197,22 @@ section ul.webrapper li {
 div.imageList {
 	width: 2000px;
 	display: flex;
-justify-content: center;
+	justify-content: center;
 	padding: 5% 0 10% 0;
 	margin-left: 22%;
 
 }
 
 .imageList__view {
-	flex: 0  1400px;
+	flex: 0 1400px;
 	height: 2000px;
 	display: flex;
 	align-items: center;
-background-color: rgb(224, 223, 223);
+	background-color: rgb(224, 223, 223);
 }
 
 .imageList__thumbs {
+	padding-top: 5%;
 	flex: 1;
 	display: flex;
 	flex-wrap: wrap;
@@ -208,6 +262,8 @@ background-color: rgb(224, 223, 223);
 	/*　はみ出た色要素を隠す　*/
 	opacity: 0;
 }
+
+
 
 @keyframes bgextendAnimeBase {
 	from {
@@ -310,4 +366,3 @@ footer {
 	align-items: flex-end;
 	justify-content: center;
 }
-
