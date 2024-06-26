@@ -124,6 +124,7 @@ section.on {
 section.abou {
 	position: relative;
 	left: 0rem;
+	margin-bottom: 10%;
 }
 
 .aboutext {
